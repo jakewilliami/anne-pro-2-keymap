@@ -4,7 +4,7 @@ Since October 2021, I have used a [Anne Pro 2 60%](http://en.obins.net/anne-pro2
 
 ## Keymap
 
-The keymap is detailed in [`keymap.c`](./keymap.c).
+The keymap is detailed in [`keymap.c`](./keymap.c).  This was initially compiled using [QMK CLI v1.1.8](https://github.com/qmk/homebrew-qmk/tree/e4d46a44), [QMK Firmware v0.31.7](https://github.com/qmk/qmk_firmware/tree/0.31.7) and [AnnePro Tools v0.1.1](https://github.com/OpenAnnePro/AnnePro2-Tools/tree/3b692e82).
 
 ## Set Up
 
