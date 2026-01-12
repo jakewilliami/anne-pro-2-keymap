@@ -1,10 +1,10 @@
 <h1 align="center">Anne Pro 2 Keymap</h1>
 
-Since October 2021, I have used a [Anne Pro 2 60%](http://en.obins.net/anne-pro2/) ([C18 revision, HT32F52352 LQFP64](https://openannepro.github.io/ap2_revisions/#case)) with [Kailh BOX White switches](https://www.kailh.net/products/kailh-box-switch-set?variant=43650946826482) for my home setup.  I have used this keyboard in QWERTY throughout this time.
+Since October 2021, I have used a [Anne Pro 2 60%](http://en.obins.net/anne-pro2/) ([C18 revision, HT32F52352 LQFP64](https://openannepro.github.io/ap2_revisions/#case)) with [Kailh BOX White switches](https://www.kailh.net/products/kailh-box-switch-set?variant=43650946826482) for my home setup.  I have used this keyboard in QWERTY throughout this time.  However, in early January 2026, I decided to switch to a [slightly modified Colemak DH for ANSI](https://colemakmods.github.io/mod-dh/keyboards.html#ansi-keyboards).
 
 ## Keymap
 
-The QWERTY keymap is detailed in [`keymap.c`](./keymap.c).
+The keymap is detailed in [`keymap.c`](./keymap.c).
 
 ## Set Up
 
