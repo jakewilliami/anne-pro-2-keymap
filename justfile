@@ -1,8 +1,15 @@
 # -*- mode: just -*-
 
 # QMK specifications
-keyboard := "annepro2/c15"  # qmk list-keyboards | grep annepro2
+keyboard_model := "annepro2"
+keyboard := keyboard_model + "/" + "c18"
 keymap := "colemak"
+
+# QMK directory
+keymap_file := "keymap.c"
+keymap_dir := env_var("HOME") / "qmk_firmware" / "keyboards" / keyboard_model / "keymaps" / keymap
+keymap_local := keymap_dir / keymap_file
+repo_dir := justfile_directory()
 
 # QMK dependencies
 brew_dir := "/opt" / "homebrew" / "opt"
@@ -57,3 +64,13 @@ setup-ap2-tools:
         git checkout {{annepro2_tools_rev}}
         cargo build --release
     fi
+
+# Pull keymap from repo and sync it locally
+[macos]
+sync-local:
+    cp -vi {{keymap_file}} {{keymap_dir}}
+
+# Pull keymap locally and update it in the repo
+[macos]
+sync-remote:
+    cp -vi {{keymap_local}} {{repo_dir}}
